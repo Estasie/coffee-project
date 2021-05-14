@@ -1,0 +1,49 @@
+$accentColor: #9080b1;
+
+
+.tea_descr{
+    color: $accentColor;
+    font-size: 16px;
+    text-align: center;
+    max-width: 250px;
+    height: 2em;
+    font-weight: 300;
+    margin-top: 2em;
+    font-family: 'Minion Pro';
+}
+
+
+
+.tea_position{
+    margin-bottom: 1em;
+    cursor: pointer;
+    font-weight: 300;
+    &:hover{
+        color: $accentColor;
+        transition: color .2s ease-in-out;
+    }
+}
+._currentTeaPosition{
+    font-weight: 500;
+    color: $accentColor;
+    animation:  TeaSlide .5s ease-in 0s 1 normal;
+}
+.tea_price{
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    max-width: 250px;
+    height: 2em;
+    font-weight: 300;
+    margin-top: 2em;
+    font-family: 'P22 Undeground';
+    &:hover{
+        color: $accentColor;
+    }
+}
+
+@keyframes TeaSlide {
+    from {opacity: 0;}
+    50% {opacity: .5; }
+    to {opacity: 1;}
+  }
